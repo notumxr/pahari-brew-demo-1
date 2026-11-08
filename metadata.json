@@ -1,0 +1,6 @@
+{
+  "name": "Pahari Brew",
+  "description": "An elegant coffee roastery and café website from Shimla, offering high-altitude tranquility, artisanal pours, delicious companions, and a table reservation system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

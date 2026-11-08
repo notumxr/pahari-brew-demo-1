@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
+
+  --color-primary-green: #506052;
+  --color-primary-green-hover: #3e4b40;
+  --color-gold-accent: #e9c349;
+  --color-deep-moss: #171d18;
+  --color-sage-subtle: #434843;
+  --color-warm-cream: #f5fbf2;
+  --color-warm-white: #ffffff;
+  --color-card-bg: #fdfefd;
+  --color-border-subtle: #dee4db;
+  --color-gold-muted: #cba72f;
+}
+
+@layer base {
+  body {
+    @apply bg-[color:var(--color-warm-cream)] text-[color:var(--color-deep-moss)] font-sans antialiased selection:bg-[color:var(--color-primary-green)] selection:text-white;
+  }
+}
+
+/* Scroll animation helpers */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
